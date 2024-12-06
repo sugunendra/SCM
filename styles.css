@@ -1,3 +1,4 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,6 +33,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 form {
@@ -50,6 +52,7 @@ form {
     border-radius: 3px;
 }
 
+/* Draggable node styling */
 .draggable-node {
     display: inline-block;
     padding: 10px 15px;
@@ -65,4 +68,3 @@ form {
 .draggable-node:active {
     cursor: grabbing;
 }
-
