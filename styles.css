@@ -49,3 +49,20 @@ form {
     margin: 0.5rem 0;
     border-radius: 3px;
 }
+
+.draggable-node {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #007BFF;
+    color: white;
+    border-radius: 3px;
+    cursor: grab;
+    user-select: none;
+    position: absolute;
+}
+
+.draggable-node:active {
+    cursor: grabbing;
+}
+
