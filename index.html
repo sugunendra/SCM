@@ -14,7 +14,10 @@
         <div id="simulation-container">
             <h2>Network Planning</h2>
             <p>Drag and drop locations or add data below:</p>
-            <div id="network" class="network-area"></div>
+            <div id="network" class="network-area">
+                <svg id="network-svg" width="100%" height="300px" style="position: absolute; z-index: -1;"></svg>
+                <p>Drag nodes here!</p>
+            </div>
             <form id="data-form">
                 <input type="text" id="location" placeholder="Enter location name" required>
                 <button type="submit">Add Location</button>
@@ -25,11 +28,9 @@
     <footer>
         <p>Created by Sugunendra</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- Include Interact.js first -->
     <script src="https://cdn.jsdelivr.net/npm/@interactjs/interactjs/dist/interact.min.js"></script>
-    <div id="network" class="network-area">
-        <p>Drag nodes here!</p>
-    </div>
-
+    <!-- Your custom script -->
+    <script src="script.js"></script>
 </body>
 </html>
