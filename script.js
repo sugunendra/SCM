@@ -11,10 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle connection mode
     toggleConnectModeButton.addEventListener('click', () => {
         connectMode = !connectMode;
+
         if (connectMode) {
             toggleConnectModeButton.textContent = "Connection Mode: ON";
+            toggleConnectModeButton.style.backgroundColor = "green"; // Set background to green
+            toggleConnectModeButton.style.color = "white"; // Optional: Ensure text is readable
         } else {
             toggleConnectModeButton.textContent = "Connection Mode: OFF";
+            toggleConnectModeButton.style.backgroundColor = ""; // Reset to default
+            toggleConnectModeButton.style.color = ""; // Reset to default
             clearNodeSelection();
         }
     });
