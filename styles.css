@@ -24,22 +24,22 @@ main {
     border-radius: 5px;
 }
 
-.network-area {
+#network {
     position: relative;
     height: 300px;
     background: #f9f9f9;
     border: 1px dashed #007BFF;
     margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
 #network-svg {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
 .draggable-node {
@@ -55,4 +55,13 @@ main {
 
 .draggable-node:active {
     cursor: grabbing;
+}
+
+.connecting {
+    border: 2px dashed yellow;
+}
+
+.connection-line {
+    stroke: #007BFF;
+    stroke-width: 2;
 }
