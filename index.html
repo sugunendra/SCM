@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supply Chain Simulation</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding Interact.js CDN for drag-and-drop functionality -->
     <script src="https://cdn.jsdelivr.net/npm/@interactjs/interactjs/dist/interact.min.js"></script>
-    <!-- Fallback Interact.js in case of loading issues -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.10.11/interact.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,20 +17,24 @@
             <p>Drag and drop locations or add data below:</p>
             <div id="network" class="network-area">
                 <!-- SVG for connections -->
-                <svg id="network-svg" width="100%" height="300px"></svg>
+                <svg id="network-svg" width="100%" height="500px">
+                    <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+                            <path d="M0,0 L6,3 L0,6 Z" fill="black" />
+                        </marker>
+                    </defs>
+                </svg>
                 <p>Drag nodes here!</p>
             </div>
             <form id="data-form">
                 <input type="text" id="location" placeholder="Enter location name" required>
                 <button type="submit">Add Location</button>
             </form>
-            <button id="toggle-connect-mode">Toggle Connection Mode</button>
         </div>
     </main>
     <footer>
         <p>Created by Your Name</p>
     </footer>
-    <!-- Script for simulation behavior -->
     <script src="script.js"></script>
 </body>
 </html>
