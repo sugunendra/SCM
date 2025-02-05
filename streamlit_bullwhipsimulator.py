@@ -65,4 +65,3 @@ st.pyplot(fig)
 
 # ---- Conclusion ----
 st.write("🔍 Notice how the demand variability increases as we move upstream in the supply chain. This is the **Bullwhip Effect!**")
-
